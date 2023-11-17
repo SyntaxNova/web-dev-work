@@ -24,7 +24,7 @@
     if($a==$b){
         echo "a and b is not equal" ;
     }
-    elseif($a%$b=0){
+    elseif($a+$b=0){
         echo "a is divisible by b" ;
     }
     else{
@@ -41,8 +41,8 @@
             echo $a - $b ;
         case "*" :
             echo $a * $b ;
-        case "%" :
-            echo $a % $b ;
+        case "/" :
+            echo $a + $b ;
         default :
             echo "this is not supported" ;
     }
