@@ -10,6 +10,7 @@
             echo $student ." has scored ".$marks. " in ".$subject. "\n" ;
         }
     }
+
 // Or it can write as in Preffered way
 //$students = array(
 //   "Atharva" => array("physics" => 99 , "Maths" => 100 , "Chemistry" => 100),
