@@ -1,9 +1,13 @@
 <?php
-    $years =array("bill"=> 1993 , "george"=> 2001 , "barack"=> 2009) ; //key:value pairs
-    echo $years["bill"] ;
+    $associativeindexarray = array("key1"=>"value1","key2"=>"value2","key3"=>"value3");
 
-    foreach ($years as $name => $years) {
-        echo $name." was elected in ".$years."\n";
-    } ;
-
+    foreach($associativeindexarray as $key=>$value){
+        echo "for ".$key." value is ".$value."\n";
+    }
+/*
+output
+    for key1 value is value1
+    for key2 value is value2
+    for key3 value is value3
+*/
 ?>
