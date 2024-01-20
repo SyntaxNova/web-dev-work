@@ -106,6 +106,44 @@ let anay = any(5,6);
 document.write(anay);
 
 //function as an argument
+//focus, tricky part
+let mult = function(x,y){
+    return x*y ;
+}
+let addition = function(x,y){
+    return x+y ;
+}
+let u = 5 ;
+let v = 20 ;
 
+let action = function (x,y,z){
+    let c = z(x,y);
+    return c;
+}
+
+let argf = action(u,v,addition);
+document.write(argf);
+
+//arrow function 
+let multiply = (j,k)=>{ //just function is replaced by arrows
+    return j*k;
+}
+
+//creating object using functions
+let car = function(make , model , year){
+    this.make = make;
+    this.model = model ;
+    this.yaer = year ;
+    this.display = function(){
+        document.write(this.make + this.model + this.year );
+    }
+}
+
+let car1 = new car("Hyundai" , "i10" , 2012);
+let car2 = new car("maruti" , "baleno" , 2010);
+
+document.write(" "+ car1.make + " " + car1.model);
+
+//
 
 
