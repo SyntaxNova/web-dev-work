@@ -48,7 +48,64 @@ switch(n){
     default :
         document.write(" anything");
 }
+document.write("\n");
 
+// Day 2
+
+//while loop
+let l = 0 ;
+while(l<= 10){
+    document.write(l);
+    l++;
+}
+
+
+//do while loop
+document.write("\n");
+let dwl = 1 ;
+do{
+    document.write(dwl);
+    dwl++;
+}while(dwl<=10);
+
+
+//for of loop
+document.write("\n");
+const arr = [2,4,6,8,0,10];
+for(let element of arr){
+    document.write(element+" ");
+}
+
+//for in loop
+document.write("\n");
+const obj = {"george" : 2001 , "barack":2004 , "trump":2010 , "joe":2016 };
+for(let name in obj){
+    document.write( name + " got selected in " + obj[name] +" ");
+}
+
+//functions 
+function getmax(w=0,e=3){
+    if(w<e){
+        return " w is greater ";
+    }else{
+        return " e is greater ";
+    }
+}
+let max = getmax(5,6); 
+document.write(max);
+
+//anonymous function
+let any = function (r=3,t=0){
+    if(r<t){
+        return " r is greater ";
+    }else{
+        return " t is greater ";
+    }
+}
+let anay = any(5,6); 
+document.write(anay);
+
+//function as an argument
 
 
 
