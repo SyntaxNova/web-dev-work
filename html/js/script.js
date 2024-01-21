@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 let abc = "hello world!";   // declaring variable
 
 document.write(abc);        //print function
@@ -144,6 +144,38 @@ let car2 = new car("maruti" , "baleno" , 2010);
 
 document.write(" "+ car1.make + " " + car1.model);
 
-//
+//classes
+class car0 {
+    constructor(make, model, year) {
+        this.make = make;
+        this.model = model ;
+        this.year = year ;
+    }
+    display(){
+        document.write(this.make + this.model + this.year );
+    }
+}
+let car9 = new car0("Hyundai" , "i10" , 2012);
+let car8 = new car0("maruti" , "baleno" , 2010);
 
+for(let prop in car9){
+    document.write(prop + " : "  + car9[prop] + "<br>");
+}
+*/
+let modules = new Array("html" , "css" , "bootstrap" , "Dbms" , "php" , "javascript" , "react");
+for(let element of modules){
+    document.write(element+" ");
+}
+modules[2] = "B";
+for(let element of modules){
+    document.write(element+" "+"<br>");
+}
+modules.push("RRR");
 
+for(let element of modules){
+    document.write(element+" ");
+}
+let module = modules.pop("RRR");
+for(let element of modules){
+    document.write(element+" ");
+}
