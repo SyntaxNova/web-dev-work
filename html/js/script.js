@@ -179,8 +179,3 @@ let module = modules.pop("RRR");
 for(let element of modules){
     document.write(element+" ");
 }
-
-// //arrow function 
-// let multiply = (j,k)=>{ //just function is replaced by arrows
-//     return j*k;
-// }
