@@ -1,0 +1,67 @@
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: wheat;
+}
+#title{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 300;
+}
+h4{
+    font-weight: 200;
+}
+#description{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+}
+#survey-form{
+    background-color: rgba(151, 44, 44, 0.6);
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+#name-label, #email-label, #number-label, #dropdown-label, #radio-buttons-label, #checkboxes-label, #textarea-label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+#name, #email, #number, #dropdown, #radio-buttons, #checkboxes, #textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+#dropdown{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+label{
+    border: none;
+}
+#submit{
+    background-color: #97302c;
+    color: wheat;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
